@@ -39,7 +39,7 @@
 				 //out.println("Rukssssss"); 
 				  
 				 
-				 if(category.equals("customer")){
+			 if(category.equals("customer")){
 					    ArrayList cart=new ArrayList();
 			            int totalcost = 0;
 			            HttpSession mysession = request.getSession();
@@ -87,6 +87,9 @@
     } catch (Exception ex) {
         System.out.println(ex);
     } 
+finally{
+	System.out.print("finally");
+}
 %>
 
 <%

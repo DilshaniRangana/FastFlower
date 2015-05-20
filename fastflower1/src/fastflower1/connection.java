@@ -9,7 +9,7 @@ public class connection {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("okkk");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost/fastflower", "root", "");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost/fastflower", "root", "123");
 			System.out.println("ok");
 			return con;
 			

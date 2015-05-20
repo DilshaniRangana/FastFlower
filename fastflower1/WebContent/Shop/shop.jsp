@@ -125,9 +125,9 @@ ul.li[tabindex="0"] a{
 		String user=session.getAttribute("user").toString();
 		try{
 		Statement st=connection.getcon().createStatement();
-		ResultSet rs=st.executeQuery("SELECT * FROM store WHERE storemail='"+user+"'");
+		ResultSet rs=st.executeQuery("SELECT * FROM store WHERE storermail='"+user+"'");
 		while(rs.next()){
-		String mail=rs.getString("storemail");
+		String mail=rs.getString("storermail");
 		String name,add1,add2,min,mrank;
 		//if(user.equals(mail)){
 		name=rs.getString("name");
